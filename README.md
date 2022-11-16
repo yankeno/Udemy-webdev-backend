@@ -1,3 +1,3 @@
-# このリポジトリについて
+# Udemy の演習ファイルおよびメモ
 
-Docker + Apache + PHP7.2 + MySQL5.7 環境の雛形
+[【PHP, MYSQL, Apache】ガチで学びたい人のための WEB 開発の基礎(バックエンド編)](https://www.udemy.com/course/backend-tutorial/)
