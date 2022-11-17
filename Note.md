@@ -58,3 +58,51 @@ function hello()
 ## 0700_Cookie を使ってみよう
 
 - Cookie はドメインごとに保持されるため、他のドメインのサーバからは内容を知ることができない
+
+# 070_Apache の基礎
+
+## Apache とは
+
+- 正式名称は Apache HTTP Server
+- モジュール単位で機能を追加・削除可能
+
+## Apache の設定ファイル
+
+- Apache の設定は httpd.conf or .htaccess で行う
+- 大文字小文字は区別しない
+- セクションによって適用範囲を指定
+- `ディレクティブ`によって設定値を変更
+
+## コンテキストの種類
+
+- サーバ設定ファイル  
+  httpd.conf, srm.conf, access.conf etc.
+- バーチャルホスト  
+  <VirtualHost> 内で使用可能
+- ディレクトリ  
+  \<Directory>, \<Location>, \<Files> etc.
+- .htaccess  
+  .htaccess ファイル内で使用可能
+
+# 110_PHP と DB
+
+## 0300\_例外処理（Part1）
+
+- エラーを捕捉した場合 catch に処理が移る
+
+## 0300\_例外処理（Part2）
+
+- エラーを捕捉しない場合、上位の関数にエラーが伝わっていく  
+  -> try catch で捕捉されるまで伝わっていく
+
+## 0600\_プリペアードステートメント
+
+- Prepared ステートメントは以下の 3 段階で実行される
+  - Prepare
+  - Bind
+  - Execute
+- メリット
+  - プリコンパイルされたクエリがキャッシュされることで同じクエリが実行される際のオーバーヘッドが少ない
+  - SQL インジェクション対策になる
+
+# 参考 URL
